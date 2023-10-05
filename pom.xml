@@ -30,4 +30,12 @@
         <commons-lang3.version>3.13.0</commons-lang3.version>
         <jackson-dataformat-cbor.version>2.15.2</jackson-dataformat-cbor.version>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+        </dependency>
+    </dependencies>
 </project>
