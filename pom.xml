@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>cbor</groupId>
+    <artifactId>jcbor</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <properties>
+        <java.version>17</java.version>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <maven-source-plugin.version>3.3.0</maven-source-plugin.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <!-- JaCoCo Properties -->
+        <jacoco.version>0.8.10</jacoco.version>
+        <sonar.organization>3dwardch3ng</sonar.organization>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+        <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
+        <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
+        <sonar.jacoco.xmlReportPath>${project.basedir}/../target/site/jacoco/jacoco.xml</sonar.jacoco.xmlReportPath>
+        <sonar.language>java</sonar.language>
+        <sonar.coverage.exclusions>**/config/*</sonar.coverage.exclusions>
+        <!-- Versions -->
+        <lombok.version>1.18.30</lombok.version>
+        <commons-lang3.version>3.13.0</commons-lang3.version>
+        <jackson-dataformat-cbor.version>2.15.2</jackson-dataformat-cbor.version>
+    </properties>
+</project>
